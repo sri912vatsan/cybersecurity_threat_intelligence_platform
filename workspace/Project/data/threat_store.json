@@ -1,0 +1,1287 @@
+{
+  "description": "Simulated cybersecurity threat-intelligence store (one entry per organization).",
+  "organizations": {
+    "Meridian Health Systems": {
+      "organization": "Meridian Health Systems",
+      "profile": {
+        "industry": "Healthcare",
+        "size": "large",
+        "region": "North America"
+      },
+      "siem": {
+        "total_events_analyzed": 184000,
+        "alerts_raised": 96,
+        "severity_breakdown": {
+          "critical": 3,
+          "high": 14,
+          "medium": 45,
+          "low": 88
+        },
+        "event_sources": [
+          "network_traffic",
+          "endpoint_logs",
+          "firewall_logs",
+          "ids_ips_alerts",
+          "authentication_logs"
+        ],
+        "failed_auth_attempts": 4200
+      },
+      "network_ids": {
+        "intrusion_alerts": 58,
+        "blocked_attacks": 240,
+        "malicious_ips_blocked": 33,
+        "firewall_denies": 5100,
+        "attack_vectors": {
+          "phishing": 41,
+          "malware": 28,
+          "brute_force": 12,
+          "web_exploit": 9,
+          "ddos": 2
+        }
+      },
+      "threat_feed": {
+        "active_threat_actors": [
+          "FIN12",
+          "Lazarus Group"
+        ],
+        "known_iocs_matched": 27,
+        "malware_families": [
+          "Ryuk",
+          "Cobalt Strike",
+          "Emotet"
+        ],
+        "campaigns_linked": [
+          "ransomware wave Q3"
+        ]
+      },
+      "endpoint": {
+        "total_endpoints": 3200,
+        "compromised_endpoints": 4,
+        "process_anomalies": 61,
+        "lateral_movement_detected": true,
+        "persistence_mechanisms": [
+          "scheduled_task",
+          "registry_run_key"
+        ],
+        "data_exfiltration_detected": true
+      },
+      "asset_inventory": {
+        "total_assets": 1450,
+        "critical_assets": 62,
+        "crown_jewels": [
+          "EHR database",
+          "PACS imaging",
+          "billing"
+        ],
+        "network_segments": 9,
+        "internet_exposed_assets": 34
+      },
+      "vuln_scan": {
+        "open_critical_cves": 11,
+        "open_high_cves": 38,
+        "unpatched_systems": 210,
+        "exposed_services": [
+          "RDP",
+          "SMB",
+          "legacy web app"
+        ],
+        "patch_compliance_percent": 61
+      },
+      "compliance": {
+        "nist_csf_coverage_percent": 58,
+        "cis_controls_coverage_percent": 54,
+        "iso27001_coverage_percent": 61,
+        "control_gaps": 22
+      },
+      "posture": {
+        "mfa_coverage_percent": 64,
+        "edr_deployment_percent": 71,
+        "encryption_at_rest_percent": 68,
+        "backup_recency_days": 9,
+        "security_maturity_level": 2
+      }
+    },
+    "Cascade Financial Group": {
+      "organization": "Cascade Financial Group",
+      "profile": {
+        "industry": "Finance",
+        "size": "large",
+        "region": "Europe"
+      },
+      "siem": {
+        "total_events_analyzed": 226000,
+        "alerts_raised": 112,
+        "severity_breakdown": {
+          "critical": 4,
+          "high": 18,
+          "medium": 52,
+          "low": 90
+        },
+        "event_sources": [
+          "network_traffic",
+          "endpoint_logs",
+          "firewall_logs",
+          "ids_ips_alerts",
+          "authentication_logs"
+        ],
+        "failed_auth_attempts": 5600
+      },
+      "network_ids": {
+        "intrusion_alerts": 71,
+        "blocked_attacks": 300,
+        "malicious_ips_blocked": 44,
+        "firewall_denies": 6800,
+        "attack_vectors": {
+          "phishing": 52,
+          "malware": 24,
+          "brute_force": 18,
+          "web_exploit": 14,
+          "ddos": 3
+        }
+      },
+      "threat_feed": {
+        "active_threat_actors": [
+          "APT29",
+          "TA505"
+        ],
+        "known_iocs_matched": 39,
+        "malware_families": [
+          "Cobalt Strike",
+          "BazarLoader",
+          "TrickBot"
+        ],
+        "campaigns_linked": [
+          "credential-theft campaign"
+        ]
+      },
+      "endpoint": {
+        "total_endpoints": 4100,
+        "compromised_endpoints": 5,
+        "process_anomalies": 78,
+        "lateral_movement_detected": true,
+        "persistence_mechanisms": [
+          "wmi_event_sub",
+          "service_creation"
+        ],
+        "data_exfiltration_detected": true
+      },
+      "asset_inventory": {
+        "total_assets": 1980,
+        "critical_assets": 88,
+        "crown_jewels": [
+          "core banking",
+          "SWIFT gateway",
+          "customer PII"
+        ],
+        "network_segments": 11,
+        "internet_exposed_assets": 41
+      },
+      "vuln_scan": {
+        "open_critical_cves": 9,
+        "open_high_cves": 44,
+        "unpatched_systems": 240,
+        "exposed_services": [
+          "VPN gateway",
+          "web portal",
+          "API"
+        ],
+        "patch_compliance_percent": 66
+      },
+      "compliance": {
+        "nist_csf_coverage_percent": 66,
+        "cis_controls_coverage_percent": 63,
+        "iso27001_coverage_percent": 70,
+        "control_gaps": 18
+      },
+      "posture": {
+        "mfa_coverage_percent": 78,
+        "edr_deployment_percent": 74,
+        "encryption_at_rest_percent": 82,
+        "backup_recency_days": 6,
+        "security_maturity_level": 3
+      }
+    },
+    "Volt Grid Energy": {
+      "organization": "Volt Grid Energy",
+      "profile": {
+        "industry": "Energy",
+        "size": "large",
+        "region": "North America"
+      },
+      "siem": {
+        "total_events_analyzed": 158000,
+        "alerts_raised": 84,
+        "severity_breakdown": {
+          "critical": 2,
+          "high": 12,
+          "medium": 38,
+          "low": 74
+        },
+        "event_sources": [
+          "network_traffic",
+          "endpoint_logs",
+          "firewall_logs",
+          "ids_ips_alerts",
+          "authentication_logs"
+        ],
+        "failed_auth_attempts": 3100
+      },
+      "network_ids": {
+        "intrusion_alerts": 49,
+        "blocked_attacks": 190,
+        "malicious_ips_blocked": 28,
+        "firewall_denies": 4400,
+        "attack_vectors": {
+          "phishing": 30,
+          "malware": 22,
+          "brute_force": 15,
+          "web_exploit": 11,
+          "ddos": 4
+        }
+      },
+      "threat_feed": {
+        "active_threat_actors": [
+          "Sandworm",
+          "APT33"
+        ],
+        "known_iocs_matched": 22,
+        "malware_families": [
+          "Industroyer",
+          "Havex"
+        ],
+        "campaigns_linked": [
+          "OT-targeting campaign"
+        ]
+      },
+      "endpoint": {
+        "total_endpoints": 2600,
+        "compromised_endpoints": 3,
+        "process_anomalies": 52,
+        "lateral_movement_detected": true,
+        "persistence_mechanisms": [
+          "dll_sideloading"
+        ],
+        "data_exfiltration_detected": false
+      },
+      "asset_inventory": {
+        "total_assets": 1220,
+        "critical_assets": 74,
+        "crown_jewels": [
+          "SCADA HMI",
+          "grid control",
+          "substation gateway"
+        ],
+        "network_segments": 8,
+        "internet_exposed_assets": 27
+      },
+      "vuln_scan": {
+        "open_critical_cves": 14,
+        "open_high_cves": 33,
+        "unpatched_systems": 175,
+        "exposed_services": [
+          "Modbus",
+          "ICS historian",
+          "jump host"
+        ],
+        "patch_compliance_percent": 57
+      },
+      "compliance": {
+        "nist_csf_coverage_percent": 52,
+        "cis_controls_coverage_percent": 49,
+        "iso27001_coverage_percent": 55,
+        "control_gaps": 26
+      },
+      "posture": {
+        "mfa_coverage_percent": 59,
+        "edr_deployment_percent": 66,
+        "encryption_at_rest_percent": 61,
+        "backup_recency_days": 12,
+        "security_maturity_level": 2
+      }
+    },
+    "Apex Manufacturing Co": {
+      "organization": "Apex Manufacturing Co",
+      "profile": {
+        "industry": "Manufacturing",
+        "size": "medium",
+        "region": "Asia Pacific"
+      },
+      "siem": {
+        "total_events_analyzed": 132000,
+        "alerts_raised": 78,
+        "severity_breakdown": {
+          "critical": 3,
+          "high": 11,
+          "medium": 40,
+          "low": 70
+        },
+        "event_sources": [
+          "network_traffic",
+          "endpoint_logs",
+          "firewall_logs",
+          "ids_ips_alerts",
+          "authentication_logs"
+        ],
+        "failed_auth_attempts": 2700
+      },
+      "network_ids": {
+        "intrusion_alerts": 44,
+        "blocked_attacks": 165,
+        "malicious_ips_blocked": 25,
+        "firewall_denies": 3900,
+        "attack_vectors": {
+          "phishing": 34,
+          "malware": 26,
+          "brute_force": 10,
+          "web_exploit": 7,
+          "ddos": 1
+        }
+      },
+      "threat_feed": {
+        "active_threat_actors": [
+          "Conti affiliates"
+        ],
+        "known_iocs_matched": 19,
+        "malware_families": [
+          "LockBit",
+          "Qakbot"
+        ],
+        "campaigns_linked": [
+          "manufacturing ransomware"
+        ]
+      },
+      "endpoint": {
+        "total_endpoints": 1900,
+        "compromised_endpoints": 6,
+        "process_anomalies": 47,
+        "lateral_movement_detected": true,
+        "persistence_mechanisms": [
+          "startup_folder",
+          "scheduled_task"
+        ],
+        "data_exfiltration_detected": false
+      },
+      "asset_inventory": {
+        "total_assets": 940,
+        "critical_assets": 51,
+        "crown_jewels": [
+          "MES server",
+          "PLC network",
+          "CAD vault"
+        ],
+        "network_segments": 7,
+        "internet_exposed_assets": 22
+      },
+      "vuln_scan": {
+        "open_critical_cves": 12,
+        "open_high_cves": 29,
+        "unpatched_systems": 158,
+        "exposed_services": [
+          "RDP",
+          "legacy ERP",
+          "shared drive"
+        ],
+        "patch_compliance_percent": 54
+      },
+      "compliance": {
+        "nist_csf_coverage_percent": 48,
+        "cis_controls_coverage_percent": 45,
+        "iso27001_coverage_percent": 50,
+        "control_gaps": 29
+      },
+      "posture": {
+        "mfa_coverage_percent": 55,
+        "edr_deployment_percent": 61,
+        "encryption_at_rest_percent": 58,
+        "backup_recency_days": 15,
+        "security_maturity_level": 2
+      }
+    },
+    "Northwind Trading": {
+      "organization": "Northwind Trading",
+      "profile": {
+        "industry": "Retail",
+        "size": "medium",
+        "region": "North America"
+      },
+      "siem": {
+        "total_events_analyzed": 94000,
+        "alerts_raised": 42,
+        "severity_breakdown": {
+          "critical": 0,
+          "high": 8,
+          "medium": 31,
+          "low": 66
+        },
+        "event_sources": [
+          "network_traffic",
+          "endpoint_logs",
+          "firewall_logs",
+          "ids_ips_alerts",
+          "authentication_logs"
+        ],
+        "failed_auth_attempts": 1800
+      },
+      "network_ids": {
+        "intrusion_alerts": 21,
+        "blocked_attacks": 410,
+        "malicious_ips_blocked": 52,
+        "firewall_denies": 5200,
+        "attack_vectors": {
+          "phishing": 38,
+          "malware": 14,
+          "brute_force": 22,
+          "web_exploit": 6,
+          "ddos": 2
+        }
+      },
+      "threat_feed": {
+        "active_threat_actors": [
+          "opportunistic phishing kits"
+        ],
+        "known_iocs_matched": 6,
+        "malware_families": [
+          "Agent Tesla"
+        ],
+        "campaigns_linked": []
+      },
+      "endpoint": {
+        "total_endpoints": 1400,
+        "compromised_endpoints": 0,
+        "process_anomalies": 18,
+        "lateral_movement_detected": false,
+        "persistence_mechanisms": [],
+        "data_exfiltration_detected": false
+      },
+      "asset_inventory": {
+        "total_assets": 680,
+        "critical_assets": 34,
+        "crown_jewels": [
+          "e-commerce DB",
+          "payment gateway"
+        ],
+        "network_segments": 6,
+        "internet_exposed_assets": 19
+      },
+      "vuln_scan": {
+        "open_critical_cves": 1,
+        "open_high_cves": 17,
+        "unpatched_systems": 62,
+        "exposed_services": [
+          "web app"
+        ],
+        "patch_compliance_percent": 84
+      },
+      "compliance": {
+        "nist_csf_coverage_percent": 74,
+        "cis_controls_coverage_percent": 71,
+        "iso27001_coverage_percent": 76,
+        "control_gaps": 9
+      },
+      "posture": {
+        "mfa_coverage_percent": 88,
+        "edr_deployment_percent": 90,
+        "encryption_at_rest_percent": 85,
+        "backup_recency_days": 2,
+        "security_maturity_level": 4
+      }
+    },
+    "Blue Harbor Logistics": {
+      "organization": "Blue Harbor Logistics",
+      "profile": {
+        "industry": "Logistics",
+        "size": "medium",
+        "region": "Europe"
+      },
+      "siem": {
+        "total_events_analyzed": 78000,
+        "alerts_raised": 35,
+        "severity_breakdown": {
+          "critical": 0,
+          "high": 6,
+          "medium": 26,
+          "low": 58
+        },
+        "event_sources": [
+          "network_traffic",
+          "endpoint_logs",
+          "firewall_logs",
+          "ids_ips_alerts",
+          "authentication_logs"
+        ],
+        "failed_auth_attempts": 1500
+      },
+      "network_ids": {
+        "intrusion_alerts": 16,
+        "blocked_attacks": 360,
+        "malicious_ips_blocked": 47,
+        "firewall_denies": 4600,
+        "attack_vectors": {
+          "phishing": 24,
+          "malware": 11,
+          "brute_force": 30,
+          "web_exploit": 4,
+          "ddos": 1
+        }
+      },
+      "threat_feed": {
+        "active_threat_actors": [
+          "commodity botnet"
+        ],
+        "known_iocs_matched": 4,
+        "malware_families": [
+          "Mirai"
+        ],
+        "campaigns_linked": []
+      },
+      "endpoint": {
+        "total_endpoints": 1100,
+        "compromised_endpoints": 0,
+        "process_anomalies": 12,
+        "lateral_movement_detected": false,
+        "persistence_mechanisms": [],
+        "data_exfiltration_detected": false
+      },
+      "asset_inventory": {
+        "total_assets": 540,
+        "critical_assets": 26,
+        "crown_jewels": [
+          "fleet tracking",
+          "warehouse WMS"
+        ],
+        "network_segments": 5,
+        "internet_exposed_assets": 14
+      },
+      "vuln_scan": {
+        "open_critical_cves": 0,
+        "open_high_cves": 12,
+        "unpatched_systems": 44,
+        "exposed_services": [
+          "VPN"
+        ],
+        "patch_compliance_percent": 88
+      },
+      "compliance": {
+        "nist_csf_coverage_percent": 76,
+        "cis_controls_coverage_percent": 73,
+        "iso27001_coverage_percent": 78,
+        "control_gaps": 7
+      },
+      "posture": {
+        "mfa_coverage_percent": 85,
+        "edr_deployment_percent": 88,
+        "encryption_at_rest_percent": 83,
+        "backup_recency_days": 3,
+        "security_maturity_level": 4
+      }
+    },
+    "Sterling University": {
+      "organization": "Sterling University",
+      "profile": {
+        "industry": "Education",
+        "size": "large",
+        "region": "North America"
+      },
+      "siem": {
+        "total_events_analyzed": 142000,
+        "alerts_raised": 61,
+        "severity_breakdown": {
+          "critical": 0,
+          "high": 11,
+          "medium": 44,
+          "low": 92
+        },
+        "event_sources": [
+          "network_traffic",
+          "endpoint_logs",
+          "firewall_logs",
+          "ids_ips_alerts",
+          "authentication_logs"
+        ],
+        "failed_auth_attempts": 3300
+      },
+      "network_ids": {
+        "intrusion_alerts": 29,
+        "blocked_attacks": 520,
+        "malicious_ips_blocked": 61,
+        "firewall_denies": 6100,
+        "attack_vectors": {
+          "phishing": 46,
+          "malware": 19,
+          "brute_force": 26,
+          "web_exploit": 8,
+          "ddos": 3
+        }
+      },
+      "threat_feed": {
+        "active_threat_actors": [
+          "student-targeted phishing"
+        ],
+        "known_iocs_matched": 8,
+        "malware_families": [
+          "Emotet (blocked)"
+        ],
+        "campaigns_linked": []
+      },
+      "endpoint": {
+        "total_endpoints": 3800,
+        "compromised_endpoints": 0,
+        "process_anomalies": 27,
+        "lateral_movement_detected": false,
+        "persistence_mechanisms": [],
+        "data_exfiltration_detected": false
+      },
+      "asset_inventory": {
+        "total_assets": 1600,
+        "critical_assets": 41,
+        "crown_jewels": [
+          "research data",
+          "student records",
+          "grants portal"
+        ],
+        "network_segments": 10,
+        "internet_exposed_assets": 38
+      },
+      "vuln_scan": {
+        "open_critical_cves": 2,
+        "open_high_cves": 24,
+        "unpatched_systems": 118,
+        "exposed_services": [
+          "legacy portal",
+          "lab servers"
+        ],
+        "patch_compliance_percent": 72
+      },
+      "compliance": {
+        "nist_csf_coverage_percent": 63,
+        "cis_controls_coverage_percent": 60,
+        "iso27001_coverage_percent": 66,
+        "control_gaps": 15
+      },
+      "posture": {
+        "mfa_coverage_percent": 70,
+        "edr_deployment_percent": 74,
+        "encryption_at_rest_percent": 69,
+        "backup_recency_days": 5,
+        "security_maturity_level": 3
+      }
+    },
+    "Pinecrest Retail Group": {
+      "organization": "Pinecrest Retail Group",
+      "profile": {
+        "industry": "Retail",
+        "size": "large",
+        "region": "Asia Pacific"
+      },
+      "siem": {
+        "total_events_analyzed": 116000,
+        "alerts_raised": 54,
+        "severity_breakdown": {
+          "critical": 0,
+          "high": 9,
+          "medium": 37,
+          "low": 71
+        },
+        "event_sources": [
+          "network_traffic",
+          "endpoint_logs",
+          "firewall_logs",
+          "ids_ips_alerts",
+          "authentication_logs"
+        ],
+        "failed_auth_attempts": 2400
+      },
+      "network_ids": {
+        "intrusion_alerts": 24,
+        "blocked_attacks": 610,
+        "malicious_ips_blocked": 58,
+        "firewall_denies": 7300,
+        "attack_vectors": {
+          "phishing": 33,
+          "malware": 12,
+          "brute_force": 19,
+          "web_exploit": 5,
+          "ddos": 9
+        }
+      },
+      "threat_feed": {
+        "active_threat_actors": [
+          "DDoS-for-hire"
+        ],
+        "known_iocs_matched": 5,
+        "malware_families": [],
+        "campaigns_linked": [
+          "seasonal DDoS"
+        ]
+      },
+      "endpoint": {
+        "total_endpoints": 2200,
+        "compromised_endpoints": 0,
+        "process_anomalies": 16,
+        "lateral_movement_detected": false,
+        "persistence_mechanisms": [],
+        "data_exfiltration_detected": false
+      },
+      "asset_inventory": {
+        "total_assets": 910,
+        "critical_assets": 37,
+        "crown_jewels": [
+          "POS network",
+          "loyalty DB"
+        ],
+        "network_segments": 7,
+        "internet_exposed_assets": 21
+      },
+      "vuln_scan": {
+        "open_critical_cves": 1,
+        "open_high_cves": 15,
+        "unpatched_systems": 71,
+        "exposed_services": [
+          "CDN edge",
+          "web app"
+        ],
+        "patch_compliance_percent": 83
+      },
+      "compliance": {
+        "nist_csf_coverage_percent": 72,
+        "cis_controls_coverage_percent": 69,
+        "iso27001_coverage_percent": 74,
+        "control_gaps": 11
+      },
+      "posture": {
+        "mfa_coverage_percent": 84,
+        "edr_deployment_percent": 86,
+        "encryption_at_rest_percent": 82,
+        "backup_recency_days": 3,
+        "security_maturity_level": 4
+      }
+    },
+    "TechNova Solutions": {
+      "organization": "TechNova Solutions",
+      "profile": {
+        "industry": "Technology",
+        "size": "medium",
+        "region": "North America"
+      },
+      "siem": {
+        "total_events_analyzed": 88000,
+        "alerts_raised": 38,
+        "severity_breakdown": {
+          "critical": 0,
+          "high": 7,
+          "medium": 24,
+          "low": 49
+        },
+        "event_sources": [
+          "network_traffic",
+          "endpoint_logs",
+          "firewall_logs",
+          "ids_ips_alerts",
+          "authentication_logs"
+        ],
+        "failed_auth_attempts": 1300
+      },
+      "network_ids": {
+        "intrusion_alerts": 14,
+        "blocked_attacks": 280,
+        "malicious_ips_blocked": 33,
+        "firewall_denies": 3800,
+        "attack_vectors": {
+          "phishing": 18,
+          "malware": 9,
+          "brute_force": 12,
+          "web_exploit": 10,
+          "ddos": 1
+        }
+      },
+      "threat_feed": {
+        "active_threat_actors": [],
+        "known_iocs_matched": 3,
+        "malware_families": [],
+        "campaigns_linked": []
+      },
+      "endpoint": {
+        "total_endpoints": 1250,
+        "compromised_endpoints": 0,
+        "process_anomalies": 9,
+        "lateral_movement_detected": false,
+        "persistence_mechanisms": [],
+        "data_exfiltration_detected": false
+      },
+      "asset_inventory": {
+        "total_assets": 600,
+        "critical_assets": 29,
+        "crown_jewels": [
+          "source code repo",
+          "CI/CD",
+          "customer cloud"
+        ],
+        "network_segments": 6,
+        "internet_exposed_assets": 17
+      },
+      "vuln_scan": {
+        "open_critical_cves": 0,
+        "open_high_cves": 9,
+        "unpatched_systems": 33,
+        "exposed_services": [
+          "staging API"
+        ],
+        "patch_compliance_percent": 91
+      },
+      "compliance": {
+        "nist_csf_coverage_percent": 81,
+        "cis_controls_coverage_percent": 79,
+        "iso27001_coverage_percent": 83,
+        "control_gaps": 5
+      },
+      "posture": {
+        "mfa_coverage_percent": 92,
+        "edr_deployment_percent": 94,
+        "encryption_at_rest_percent": 90,
+        "backup_recency_days": 1,
+        "security_maturity_level": 5
+      }
+    },
+    "Greenfield Agriculture": {
+      "organization": "Greenfield Agriculture",
+      "profile": {
+        "industry": "Agriculture",
+        "size": "small",
+        "region": "North America"
+      },
+      "siem": {
+        "total_events_analyzed": 41000,
+        "alerts_raised": 22,
+        "severity_breakdown": {
+          "critical": 0,
+          "high": 4,
+          "medium": 17,
+          "low": 39
+        },
+        "event_sources": [
+          "network_traffic",
+          "endpoint_logs",
+          "firewall_logs",
+          "ids_ips_alerts",
+          "authentication_logs"
+        ],
+        "failed_auth_attempts": 800
+      },
+      "network_ids": {
+        "intrusion_alerts": 9,
+        "blocked_attacks": 150,
+        "malicious_ips_blocked": 19,
+        "firewall_denies": 2100,
+        "attack_vectors": {
+          "phishing": 12,
+          "malware": 6,
+          "brute_force": 8,
+          "web_exploit": 2,
+          "ddos": 0
+        }
+      },
+      "threat_feed": {
+        "active_threat_actors": [],
+        "known_iocs_matched": 2,
+        "malware_families": [],
+        "campaigns_linked": []
+      },
+      "endpoint": {
+        "total_endpoints": 420,
+        "compromised_endpoints": 0,
+        "process_anomalies": 6,
+        "lateral_movement_detected": false,
+        "persistence_mechanisms": [],
+        "data_exfiltration_detected": false
+      },
+      "asset_inventory": {
+        "total_assets": 210,
+        "critical_assets": 14,
+        "crown_jewels": [
+          "farm ERP",
+          "IoT sensors"
+        ],
+        "network_segments": 4,
+        "internet_exposed_assets": 8
+      },
+      "vuln_scan": {
+        "open_critical_cves": 1,
+        "open_high_cves": 8,
+        "unpatched_systems": 38,
+        "exposed_services": [
+          "IoT gateway"
+        ],
+        "patch_compliance_percent": 76
+      },
+      "compliance": {
+        "nist_csf_coverage_percent": 61,
+        "cis_controls_coverage_percent": 58,
+        "iso27001_coverage_percent": 63,
+        "control_gaps": 13
+      },
+      "posture": {
+        "mfa_coverage_percent": 68,
+        "edr_deployment_percent": 64,
+        "encryption_at_rest_percent": 66,
+        "backup_recency_days": 6,
+        "security_maturity_level": 3
+      }
+    },
+    "Crestline Insurance": {
+      "organization": "Crestline Insurance",
+      "profile": {
+        "industry": "Insurance",
+        "size": "large",
+        "region": "Europe"
+      },
+      "siem": {
+        "total_events_analyzed": 134000,
+        "alerts_raised": 58,
+        "severity_breakdown": {
+          "critical": 0,
+          "high": 10,
+          "medium": 39,
+          "low": 77
+        },
+        "event_sources": [
+          "network_traffic",
+          "endpoint_logs",
+          "firewall_logs",
+          "ids_ips_alerts",
+          "authentication_logs"
+        ],
+        "failed_auth_attempts": 2900
+      },
+      "network_ids": {
+        "intrusion_alerts": 26,
+        "blocked_attacks": 470,
+        "malicious_ips_blocked": 49,
+        "firewall_denies": 5900,
+        "attack_vectors": {
+          "phishing": 44,
+          "malware": 15,
+          "brute_force": 21,
+          "web_exploit": 7,
+          "ddos": 2
+        }
+      },
+      "threat_feed": {
+        "active_threat_actors": [
+          "BEC crews"
+        ],
+        "known_iocs_matched": 7,
+        "malware_families": [
+          "Agent Tesla (blocked)"
+        ],
+        "campaigns_linked": [
+          "BEC campaign"
+        ]
+      },
+      "endpoint": {
+        "total_endpoints": 2400,
+        "compromised_endpoints": 0,
+        "process_anomalies": 21,
+        "lateral_movement_detected": false,
+        "persistence_mechanisms": [],
+        "data_exfiltration_detected": false
+      },
+      "asset_inventory": {
+        "total_assets": 1100,
+        "critical_assets": 44,
+        "crown_jewels": [
+          "claims DB",
+          "actuarial models",
+          "customer PII"
+        ],
+        "network_segments": 8,
+        "internet_exposed_assets": 25
+      },
+      "vuln_scan": {
+        "open_critical_cves": 2,
+        "open_high_cves": 19,
+        "unpatched_systems": 96,
+        "exposed_services": [
+          "mail gateway",
+          "web portal"
+        ],
+        "patch_compliance_percent": 79
+      },
+      "compliance": {
+        "nist_csf_coverage_percent": 75,
+        "cis_controls_coverage_percent": 72,
+        "iso27001_coverage_percent": 77,
+        "control_gaps": 10
+      },
+      "posture": {
+        "mfa_coverage_percent": 86,
+        "edr_deployment_percent": 83,
+        "encryption_at_rest_percent": 88,
+        "backup_recency_days": 4,
+        "security_maturity_level": 4
+      }
+    },
+    "Harbor City Government": {
+      "organization": "Harbor City Government",
+      "profile": {
+        "industry": "Government",
+        "size": "large",
+        "region": "North America"
+      },
+      "siem": {
+        "total_events_analyzed": 151000,
+        "alerts_raised": 66,
+        "severity_breakdown": {
+          "critical": 0,
+          "high": 12,
+          "medium": 46,
+          "low": 84
+        },
+        "event_sources": [
+          "network_traffic",
+          "endpoint_logs",
+          "firewall_logs",
+          "ids_ips_alerts",
+          "authentication_logs"
+        ],
+        "failed_auth_attempts": 3600
+      },
+      "network_ids": {
+        "intrusion_alerts": 31,
+        "blocked_attacks": 540,
+        "malicious_ips_blocked": 63,
+        "firewall_denies": 6700,
+        "attack_vectors": {
+          "phishing": 40,
+          "malware": 17,
+          "brute_force": 28,
+          "web_exploit": 9,
+          "ddos": 4
+        }
+      },
+      "threat_feed": {
+        "active_threat_actors": [
+          "reconnaissance scanning"
+        ],
+        "known_iocs_matched": 9,
+        "malware_families": [],
+        "campaigns_linked": [
+          "recon activity"
+        ]
+      },
+      "endpoint": {
+        "total_endpoints": 2900,
+        "compromised_endpoints": 0,
+        "process_anomalies": 24,
+        "lateral_movement_detected": false,
+        "persistence_mechanisms": [],
+        "data_exfiltration_detected": false
+      },
+      "asset_inventory": {
+        "total_assets": 1350,
+        "critical_assets": 57,
+        "crown_jewels": [
+          "permits system",
+          "tax records",
+          "public safety"
+        ],
+        "network_segments": 9,
+        "internet_exposed_assets": 33
+      },
+      "vuln_scan": {
+        "open_critical_cves": 3,
+        "open_high_cves": 27,
+        "unpatched_systems": 142,
+        "exposed_services": [
+          "public web",
+          "legacy mainframe"
+        ],
+        "patch_compliance_percent": 68
+      },
+      "compliance": {
+        "nist_csf_coverage_percent": 60,
+        "cis_controls_coverage_percent": 57,
+        "iso27001_coverage_percent": 62,
+        "control_gaps": 17
+      },
+      "posture": {
+        "mfa_coverage_percent": 66,
+        "edr_deployment_percent": 70,
+        "encryption_at_rest_percent": 64,
+        "backup_recency_days": 7,
+        "security_maturity_level": 3
+      }
+    },
+    "Summit Education Network": {
+      "organization": "Summit Education Network",
+      "profile": {
+        "industry": "Education",
+        "size": "medium",
+        "region": "Asia Pacific"
+      },
+      "siem": {
+        "total_events_analyzed": 97000,
+        "alerts_raised": 45,
+        "severity_breakdown": {
+          "critical": 0,
+          "high": 8,
+          "medium": 33,
+          "low": 68
+        },
+        "event_sources": [
+          "network_traffic",
+          "endpoint_logs",
+          "firewall_logs",
+          "ids_ips_alerts",
+          "authentication_logs"
+        ],
+        "failed_auth_attempts": 2100
+      },
+      "network_ids": {
+        "intrusion_alerts": 19,
+        "blocked_attacks": 430,
+        "malicious_ips_blocked": 41,
+        "firewall_denies": 5000,
+        "attack_vectors": {
+          "phishing": 37,
+          "malware": 13,
+          "brute_force": 17,
+          "web_exploit": 5,
+          "ddos": 1
+        }
+      },
+      "threat_feed": {
+        "active_threat_actors": [],
+        "known_iocs_matched": 4,
+        "malware_families": [],
+        "campaigns_linked": []
+      },
+      "endpoint": {
+        "total_endpoints": 1700,
+        "compromised_endpoints": 0,
+        "process_anomalies": 14,
+        "lateral_movement_detected": false,
+        "persistence_mechanisms": [],
+        "data_exfiltration_detected": false
+      },
+      "asset_inventory": {
+        "total_assets": 760,
+        "critical_assets": 31,
+        "crown_jewels": [
+          "LMS",
+          "student portal"
+        ],
+        "network_segments": 6,
+        "internet_exposed_assets": 20
+      },
+      "vuln_scan": {
+        "open_critical_cves": 1,
+        "open_high_cves": 14,
+        "unpatched_systems": 79,
+        "exposed_services": [
+          "LMS plugin"
+        ],
+        "patch_compliance_percent": 80
+      },
+      "compliance": {
+        "nist_csf_coverage_percent": 69,
+        "cis_controls_coverage_percent": 66,
+        "iso27001_coverage_percent": 71,
+        "control_gaps": 12
+      },
+      "posture": {
+        "mfa_coverage_percent": 79,
+        "edr_deployment_percent": 76,
+        "encryption_at_rest_percent": 74,
+        "backup_recency_days": 4,
+        "security_maturity_level": 3
+      }
+    },
+    "Riverside Media": {
+      "organization": "Riverside Media",
+      "profile": {
+        "industry": "Media",
+        "size": "small",
+        "region": "Europe"
+      },
+      "siem": {
+        "total_events_analyzed": 53000,
+        "alerts_raised": 27,
+        "severity_breakdown": {
+          "critical": 0,
+          "high": 5,
+          "medium": 19,
+          "low": 44
+        },
+        "event_sources": [
+          "network_traffic",
+          "endpoint_logs",
+          "firewall_logs",
+          "ids_ips_alerts",
+          "authentication_logs"
+        ],
+        "failed_auth_attempts": 950
+      },
+      "network_ids": {
+        "intrusion_alerts": 11,
+        "blocked_attacks": 190,
+        "malicious_ips_blocked": 23,
+        "firewall_denies": 2600,
+        "attack_vectors": {
+          "phishing": 16,
+          "malware": 8,
+          "brute_force": 9,
+          "web_exploit": 6,
+          "ddos": 1
+        }
+      },
+      "threat_feed": {
+        "active_threat_actors": [],
+        "known_iocs_matched": 2,
+        "malware_families": [
+          "old signature (cleaned)"
+        ],
+        "campaigns_linked": []
+      },
+      "endpoint": {
+        "total_endpoints": 560,
+        "compromised_endpoints": 0,
+        "process_anomalies": 7,
+        "lateral_movement_detected": false,
+        "persistence_mechanisms": [],
+        "data_exfiltration_detected": false
+      },
+      "asset_inventory": {
+        "total_assets": 280,
+        "critical_assets": 17,
+        "crown_jewels": [
+          "CMS",
+          "media archive"
+        ],
+        "network_segments": 4,
+        "internet_exposed_assets": 12
+      },
+      "vuln_scan": {
+        "open_critical_cves": 0,
+        "open_high_cves": 10,
+        "unpatched_systems": 41,
+        "exposed_services": [
+          "CMS"
+        ],
+        "patch_compliance_percent": 85
+      },
+      "compliance": {
+        "nist_csf_coverage_percent": 70,
+        "cis_controls_coverage_percent": 67,
+        "iso27001_coverage_percent": 72,
+        "control_gaps": 11
+      },
+      "posture": {
+        "mfa_coverage_percent": 82,
+        "edr_deployment_percent": 80,
+        "encryption_at_rest_percent": 78,
+        "backup_recency_days": 3,
+        "security_maturity_level": 4
+      }
+    }
+  }
+}
